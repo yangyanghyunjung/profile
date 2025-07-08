@@ -1,0 +1,167 @@
+html, body {
+    width:100%;
+    height: 100%;
+    background-color: whitesmoke;
+}
+header {
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* 여유 여백 */
+    box-shadow: 1px 1px 3px 1px #dadce0;
+}
+main {
+    margin-top: 10%;
+    left: 0;
+    right: 0;
+    height: 50rem;
+    min-height: calc(100vh - 2rem); /* footer 높이를 빼준다. */
+}
+article {
+    height: 20rem;
+}
+section {
+}
+footer {
+    height: 2rem; /* footer 높이 */
+    opacity: 0.7;
+   
+}
+#photo {
+    border-radius: 5rem;
+    height: 15rem;
+    width: 15rem;
+    top: -3rem;
+}
+.info {
+    border-radius: 2rem;
+    height: 100%;
+    top:3%;
+    display: flex;
+    flex-direction: row;
+}
+#profile {
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    left: 0;
+   
+}
+#social a{
+    margin-left: 1rem;
+}
+#name {
+    font-size: 2rem;
+    font-weight: bold;
+
+
+
+
+}
+#location_icon {
+    width: 1rem;
+    height: 1rem;
+}
+.social_icon {
+    width: 2.5rem;
+    height: 2.5crem;
+   
+}
+#profile_img {
+    width: 100%;
+    height: 100%;
+}
+#description {
+    margin-left: 20rem;
+    text-align: center;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+   
+    width: 100%;
+    height: 400px;
+  }
+ 
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+ 
+    animation: slider 7.5s infinite linear;
+  }
+ 
+  .slide:nth-child(1) {
+    background-image: url(img1.jpg);
+    animation-delay: 0;
+  }
+  .slide:nth-child(2) {
+    background-image: url(img2.jpg);
+    animation-delay: -2.5s;
+  }
+  .slide:nth-child(3) {
+    background-image: url(img3.jpg);
+    animation-delay: -5s;
+  }
+ 
+  @keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+ 
+    26% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    93% {
+      transform: translateX(100%);
+    }
+ 
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .img{
+    width: 100%;
+    height: 90%;
+  }
+  #skill_ico {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+#skill_ico img{
+    width: 5%;
+}
+.sub_title {
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.certification {
+    display: flex;
+    justify-content: center;
+}
+.certification_item {
+    border: solid gray 3px;
+    border-radius: 4%;
+}
