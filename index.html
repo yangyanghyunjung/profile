@@ -1,79 +1,221 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>백엔드 개발자</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="app.js"></script>
 </head>
 <body>
-    <!-- 자기소개 (이름, 한 줄 소개, 슬로건 등)
-    연락처 정보 (이메일, GitHub, 링크드인 주소 등)
-    기술 스택 또는 관심 분야
-    프로젝트 또는 경험 소개 (필요에 따라 이미지나 외부 링크 활용)
-    그 외 프로필 페이지의 목적과 정체성을 벗어나지 않는 한에서 자유롭게 구성 -->
-    <header>
-        <span id="profile">hyunjungyang</span>
+    <header class="main-header">
+        <div class="logo">YANG</div>
+        <nav class="nav">
+            <a class="menu" href="#about">About</a>
+            <a class="menu" href="#certificates-skills">Certificates & Skills</a>
+            <a class="menu" href="#projects">Projects</a>
+            <a class="menu" href="#experience-container">Experience</a>
+        </nav>
         <span id="social">
             <a href="https://github.com/yangyanghyunjung">
-                <img class="social_icon" src="github.png"/>
+                <img class="social_icon" src="img/github2.png"/>
             </a>
             <a href="https://github.com/yangyanghyunjung">
-                <img class="social_icon" src="linkedin.png"/>
+                <img class="social_icon" src="img/linkedin.png"/>
             </a>
         </span>
     </header>
-    <main>
-        <article>
-            <div class="info">
-                <div id="photo">
-                    <img id="profile_img" src="profile.png" />
-                </div>
-                <div id="description">
-                    <p>백엔드 개발자 <span>양현정</span>입니다.</p>
-                    <div>
-                        <span><img id="location_icon" src="location.png"/></span>
-                        <span>Seoul, Korea</span>
+
+  <!-- 히어로 섹션 -->
+  <section class="hero">
+    <div class="hero-content">
+        <div id="photo">
+            <img id="profile_img" src="img/photo.jpg" />
+        </div>
+        <!-- <h1>양현정</h1> -->
+        <h2>Back-end Developer</h2>
+        <div class="test"></div>
+        <p class="slogan">안녕하세요. 백엔드 개발자 양현정 입니다.<br>확실한 문제 해결과 견고한 서비스를 지향합니다.</p>
+        <a href="#certificates-skills" class="hero-btn"><img id="mouse" src="img/mouse.png" alt="마우스 이미지"></a>
+    </div>
+  </section>
+
+  <!-- certificates-skills 섹션 -->
+<section id="certificates-skills">
+    <div class="section-inner">
+        <h2 class="sub-title">Certificates & Skills</h2>
+        <!-- 첫 번째 항목 -->
+        <div class="certificates-skills-container">
+        <!-- 첫 번째 항목 -->
+        <div class="certificates-skills-item green">
+            <div class="certificates-skills-item-badge">Certificates</div>
+            <div class="certificates-skills-item-content">
+            <h3>자격증</h3>
+            <ul>
+                <li>정보처리산업기사</li>
+                <li>네트워크관리사2급</li>
+                <li>컴퓨터활용능력1급</li>
+                <li>ITQ 엑셀-한글</li>
+            </ul>
+            <br>
+            <h3>어학</h3>
+            <ul>
+                <li>TOEIC SPEAKING AL</li>
+            </ul>
+            </div>
+        </div>
+
+        <!-- 두 번째 항목 -->
+        <!-- <div class="certificates-skills-item blue">
+            <div class="certificates-skills-item-badge">Skills</div>
+            <div class="certificates-skills-item-content">
+            <h3>기술 스택</h3>
+            <div class="skills">
+                    <div id="skill_ico">
+                    <img src="img/html-5.png">
+                    <img src="img/dotNet.png">
+                    <img src="img/java.png">
+                    <img src="img/vueJs.png">
+                    <img src="img/spring.png">
+                    <img src="img/intellij.png">
+                    <img src="img/csharp.png">
                     </div>
+                </div>
+            </div> -->
+        <div class="certificates-skills-item blue">
+            <div class="certificates-skills-item-badge">Skills</div>
+            <div class="certificates-skills-item-content">
+            <h3>기술 스택</h3>
+            <div class="skills">
+                <div class="skills-wrapper">
+                    <div class="skill_category">Tool</div>
+                    <div class="skill_type">
+                        <span class="position-label">React</span>
+                        <span class="position-label">java</span>
+                    </div>
+                </div>    
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Projects 섹션 -->
+  <section class="section">
+    <div class="section-inner" id="projects">
+        <h3 class="sub-title">Projects</h3>
+        <div class="project-container">
+            <div class="project-card">
+                <div class="project-title-badge">프로젝트1</div>
+                <div class="project-period">2024.12</div>
+                <h3 class="project-main-title">~프로젝트</h3>
+                <div class="project_img">
+                    <img src="img/img1.png" alt="">
+                </div>
+                <ul class="project-details-list">
+                    <li>~하고자  개발</li>
+                    <li>~ 기능 개발</li>
+                </ul>
+                <div class="tech-stack">
+                    <span class="tech_stack_item">React</span>
+                    <span class="tech_stack_item">React</span>
+                </div>
+                <button class="readme-btn">📖 MORE</button>
+            </div>
+            <div class="project-card">
+                <div class="project-title-badge">프로젝트1</div>
+                <div class="project-period">2024.12</div>
+                <h3 class="project-main-title">~프로젝트</h3>
+                <div class="project_img">
+                    <img src="img/img1.png" alt="">
+                </div>
+                <ul class="project-details-list">
+                    <li>~하고자  개발</li>
+                    <li>~ 기능 개발</li>
+                </ul>
+                <div class="tech-stack">TypeScript, Next.js, Zustand, React-Query, Tailwind CSS, Notion, Vercel</div>
+                <button class="readme-btn">📖 MORE</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-title-badge">프로젝트1</div>
+                <div class="project-period">2024.12</div>
+                <h3 class="project-main-title">~프로젝트</h3>
+                <div class="project_img">
+                    <img src="img1.png" alt="">
+                </div>
+                <ul class="project-details-list">
+                    <li>~하고자  개발</li>
+                    <li>~ 기능 개발</li>
+                </ul>
+                <div class="project-link">
+                    <span class="link-bar"></span>
+                    <a href="#">https://naver.com</a>
+                </div>
+                <div class="tech-stack">TypeScript, Next.js, Zustand, React-Query, Tailwind CSS, Notion, Vercel</div>
+                <button class="readme-btn">📖 MORE</button>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Experience 섹션 -->
+  <section class="section" id="experience-container">
+    <div class="section-inner">
+        <h2 class="sub-title">Experience</h2>
+        <div class="experience2-content">
+            <div class="company-logo">
+                <img src="img/woori_fisa.png" alt="우리FISA 로고">
+            </div>
+            <div class="company-info">
+                <h3 class="company-name">우리FISA</h3>
+                <div class="employment-period">2025.07.01 - 2025.12.01</div>
+                <blockquote class="company-slogan">"클라우드 서비스 개발 과정 수료"</blockquote>
+                <span class="position-label">Frontend 개발</span>
+                <span class="position-label">Backend 개발</span>
+                <span class="position-label">Cloud</span>
+                <div class="project-details">
+                    <h4>~~~ 관련 개발</h4>
                 </div>
             </div>
-        </article>
-        <section>
-            <h2 class="sub_title">Project</h2>
-            <div class="slider">
-                <div class="slide"><img class="img" src="img1.png" /></div>
-                <div class="slide"><img class="img" src="img2.png" /></div>
-                <div class="slide"><img class="img" src="img3.png" /></div>
-              </div>
-              <h2 class="sub_title">Experience</h2>
-              <div class="content">
-                  <div class="lt">이피언스</div>
-                  <div class="rt">
-                      <ul>
-                          <li>LS 통합결재 구축</li>
-                          <li>자사 통합결재</li>
-                          <li>LS 통합결재</li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="experience2-content">
+            <div class="company-logo">
+                <img src="img/epience.png" alt="우리FISA 로고">
+            </div>
+            <div class="company-info">
+                <h3 class="company-name">Epience</h3>
+                <div class="employment-period">2023.00.00 - 2024.00.00</div>
+                <blockquote class="company-slogan">"전자결재 솔루션"</blockquote>
+                <span class="position-label">Frontend 개발</span>
+                <span class="position-label">Backend 개발</span>
+                <div class="project-details">
+                    <h4>LS 통합결재 화면, API 개발</h4>
+                    <p class="project-description">
+                    <span>vue.js</span> <span>C#</span> <span>.Net</span>
+                    </p>
                 </div>
-              <h2 class="sub_title">certification</h2>
-              <div class="certification">
-                <span class="certification_item">정보처리 산업기사</span>
-                <span class="certification_item">네트워크 관리사 2급</span>
-                <span class="certification_item">컴퓨터활용능력1급</span>
-                <span class="certification_item">ITQ 엑셀 한글</span>
-              </div>
-              <h2 class="sub_title">Skill</h2>
-              <div id="skill_ico">
-                  <img src="html-5.png">
-                  <img src="css.png">
-                  <img src="java.png">
-                  <img src="vue.png">
-                  <img src="mysql.png">
-                </div>
-        </section>
+            </div>
+        </div>
+    </div>
+    </section>
 
-    </main>
-    <footer>footer<footer>
+  <!-- Contact 섹션 -->
+  <section id="contact" class="section">
+    <div class="section-inner">
+      <h3 class="sub-title">Contact</h3>
+      <a href="mailto:hyunjungyang0922@gmail.com">
+        <img src="mail.png" />
+        hyunjungyang0922@gmail.com
+      </a>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2025 양현정. All rights reserved.</p>
+  </footer>
 </body>
 </html>
